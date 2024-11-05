@@ -3,7 +3,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
+import './index.css'; // Import Tailwind CSS
+
 import {
   getDefaultWallets,
   RainbowKitProvider,
@@ -28,7 +29,6 @@ const wagmiClient = createClient({
   provider,
 });
 
-// Render the React application with RainbowKit and Wagmi
 ReactDOM.render(
   <React.StrictMode>
     <WagmiConfig client={wagmiClient}>
